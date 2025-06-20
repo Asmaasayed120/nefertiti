@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pth
+*.exe
+*.dll
+*.lib
+*.pyd
+*.mp4
+*.avi
+Wav2Lip/checkpoints/wav2lip_gan.pth
