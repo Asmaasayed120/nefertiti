@@ -14,6 +14,13 @@ import logging
 from pathlib import Path
 from moviepy.editor import AudioFileClip  # لتحويل mp3 إلى wav
 import sys
+import os
+import subprocess
+
+# Download model if not exists
+if not os.path.exists("Wav2Lip/checkpoints/wav2lip_gan.pth"):
+    subprocess.run(["python", "download_model.py"])
+    
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
