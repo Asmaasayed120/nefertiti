@@ -1,10 +1,27 @@
+# Python virtual environment
 venv/
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Video and media files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wav
+*.mp3
+
+# Model checkpoints and binaries
 *.pth
 *.exe
 *.dll
 *.lib
-*.pyd
-*.mp4
-*.avi
+
+# Temporary and output files
+temp_files/
+*.log
+
+# Wav2Lip model (downloaded at runtime)
 Wav2Lip/checkpoints/wav2lip_gan.pth
